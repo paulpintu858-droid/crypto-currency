@@ -1,0 +1,1122 @@
+@media(max-width:1420px)  {
+
+}
+
+@media(max-width:1366px )   {
+
+}
+
+@media(max-width:1280px)    {
+
+}
+
+@media(max-width:1024px)    {
+
+}
+
+@media(max-width:991px)     {
+/************* header *************/
+header {
+    padding: 10px;
+}   
+
+   
+header .main_header .menu {
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background: #fff;
+    padding: 10px 0;
+    transition: all ease-in-out .50s;
+    z-index: 2;
+}
+
+header .main_header .menu.active {
+    left: 0%;
+}
+
+header .main_header .search_div {
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+header .main_header .menu ul {
+    display: unset;
+}
+
+header .main_header .menu ul li {
+    padding: unset;
+    border-bottom:1px dotted #d6d6d6 ;
+}
+
+header .main_header .menu ul li a {
+    color: #212121;
+    padding: 10px;
+}
+
+header .main_header .menu .clo_button {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+header .main_header .menu .clo_button button svg {
+    width: 20px;
+    fill: #212121;
+}
+
+header .main_header .toggle_button {
+    display: block;
+}
+
+header .main_header .toggle_button button svg {
+    width: 25px;
+    fill: #fff;
+}
+
+header .main_header .menu .search_div {
+    position:absolute;
+    top: 0;
+    right: 10px;
+}
+/************* header *************/
+.banner {
+    margin-bottom: 30px;
+}
+
+.banner_div {
+    padding: 0 40px;
+}
+
+.banner_box {
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.banner_text_box {
+    width: 100%;
+}
+
+.banner_div .banner_text_box h1 {
+    font-size: 35px;
+    padding-bottom: 20px;
+    max-width: 520px;
+}
+
+.paragraph {
+    line-height: 28px;
+    font-size: 13px;
+    max-width: 520px;
+    margin-bottom: 25px;
+}
+
+.button_div ul li .paper {
+    font-size: 12px;
+}
+
+.button_div ul li .find_out_more {
+    font-size: 12px;
+}
+
+.Distribution_div {
+    width: 100%;
+    margin: auto;
+}
+
+.Distribution_div .Distribution_box_padding h3 {
+    font-size: 14px;
+}
+/********** progressbar **********/
+.time_div {
+    padding: 25px;
+}
+
+.time_div .time_box .time p {
+    font-size: 15px;
+    padding: 25px 15px;
+}
+
+.progressbar_div .progressbar_box {
+    margin: 20px 0;
+    height: 30px;
+}
+
+.progressbar_box span {
+    height: 30px;
+}
+
+.clock_word h4 {
+    font-size: 12px;
+}
+
+.progressbar_div .progressbar_text p {
+    font-size: 12px;
+}
+
+.progressbar_div .progressbar_box::after {
+    height: 45px;
+}
+
+.progressbar_div .progressbar_box::before {
+    height: 45px;
+}
+/********** progressbar **********/
+/********** time_until **********/
+.time_until {
+    padding: 30px 40px;
+}
+
+.time_until_text h2 {
+    font-size: 25px;
+}
+
+.time_until_text p {
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.time_until_box {
+    margin-bottom: 50px;
+    gap :0;
+}
+
+.icon_div {
+    width: 110px;
+    height: 110px;
+}
+
+.icon_div img {
+    width: 35px;
+    height: 35px;
+}
+
+.icon-line {
+    width: 90px;
+}
+
+.icon_div_text {
+    width: calc(100% - 230px);
+}
+
+.icon_div_text h3 {
+    font-size: 20px;
+}
+
+.icon_div_text p {
+    font-size: 11px;
+    padding-top: 10px;
+    line-height: 22px;
+}
+
+.time_until_div .time_until_box:nth-child(even) {
+    padding-left: 99px;
+}
+
+.time_until_div .time_until_box:nth-child(even) .icon_div {
+    width: 90px;
+    height: 90px;
+}
+
+.time_until_div .time_until_box:nth-child(even) .icon_div img {
+    width: 30px;
+    height: 30px;
+}
+/********** time_until **********/
+/********* .live_market *********/
+.live_market {
+    padding: 30px 40px;
+}
+
+.live_market .live_market_div {
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.live_market_box {
+    width: 100%;
+}
+
+.live_market_box .live_market_text_div h2 {
+    font-size: 25px;
+    max-width: 500px;
+    padding-bottom: 15px;
+}
+
+.live_market_box .live_market_text_div p    {
+    font-size: 14px;
+}
+
+.live_market_about_us  ul li .icon_box {
+    width: 25px;
+    height: 25px;
+}
+
+.live_market_about_us  ul li .icon_box img {
+    width: 15px;
+    height: 10px;
+}
+
+.live_market_about_us  ul li {
+    padding: 20px 0;
+}
+
+.live_market_box .button_divs button {
+    font-size: 15px;
+}
+
+.live_market_about_us {
+    padding: 30px 0;
+}
+
+.live_market_mobile {
+    width: 100%;
+}
+
+.live_market_mobile .mobile_image {
+    width: 370px;
+}
+
+.live_market_mobile .mobile_image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.mobile_text_boxs {
+    bottom: 10%;
+}
+/********* .live_market *********/
+/********* .mileston_div *********/
+.mileston {
+    padding: 30px 40px;
+}
+
+.mileston .mileston_heading h2 {
+    font-size: 25px;
+}
+
+.mileston .mileston_heading p {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.mileston_div .mileston_boxs .mileston_text_box .mileston_padding {
+    padding: 20px;
+}
+
+.mileston_div .mileston_boxs .mileston_text_box h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.mileston_div .mileston_boxs .mileston_text_box p {
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.mileston_div .date .image {
+    width: 60px;
+    height: 60px;
+    left: -29px;
+}
+
+.mileston_div .date .image img {
+    width: 20px;
+    height: 28px;
+}
+
+.mileston_div .mileston_boxs .mileston_text_box {
+    padding-right: 65px;
+}
+
+.mileston_div .mileston_boxs:not(:last-child) .mileston_text_box {
+    padding-bottom: 55px;
+}
+
+.mileston_div .mileston_boxs:nth-child(even) .mileston_text_box {
+    padding-left: 65px;
+}
+
+.mileston_div .mileston_boxs:nth-child(even) .date .image {
+    right: -31px;
+}
+
+.mileston_div .date_padding {
+    padding-top: 18px;
+    padding-left: 65px;
+}
+
+.mileston_div .mileston_boxs:nth-child(even) .date_padding {
+    padding-top: 18px;
+    padding-right: 65px;
+}
+
+.mileston_div .date_padding p {
+    font-size: 15px;
+}
+
+.mileston_div .mileston_boxs .mileston_text_box a {
+    font-size: 13px;
+}
+/********* .mileston_div *********/
+/********* .market_update *********/
+.market_update {
+    padding: 30px 40px;
+}
+
+.market_update .market_heading h2 {
+    font-size: 25px;
+}
+
+.market_update .market_heading p {
+    padding-top: 10px;
+}
+
+.market_update .nav {
+    padding-bottom: 5px;
+}
+
+.market_update .nav ul {
+    gap: 15px;
+}
+
+.market_update .nav ul li a {
+    font-size: 18px;
+}
+
+.market_update .nav button {
+    font-size: 12px;
+    padding: 14px 20px;
+}
+
+.table_div table thead tr th {
+    font-size: 17px;
+}
+
+.table_div tbody tr td {
+    font-size: 11px;
+}
+
+.table_div tbody tr td img {
+    width: 10px;
+    height: 12px;
+}
+/********* .market_update *********/
+/******** .coin_calculator ********/
+.coin_calculator {
+    padding: 30px 40px;
+}
+
+.coin_calculator .coin_calculator_div .coin_text .text_headding h2 {
+    font-size: 25px;
+}
+
+.coin_calculator .coin_calculator_div .coin_text .text_headding h6 {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.coin_calculator .coin_calculator_div .coin_text .text_headding p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.coin_calculator .coin_calculator_div .coin_text .text_headding {
+    padding-bottom: 25px;
+}
+
+.coin_calculation {
+    padding: 15px 20px;
+}
+
+.coin_calculator .coin_calculator_div .coin_text .coin_calculation ul li p {
+    font-size: 15px;
+}
+
+.coin_calculator .coin_calculator_div .coin_text .coin_calculation ul li .number {
+    font-size: 15px;
+}
+
+.image_div {
+    width: 50%;
+    height: 200px;
+}
+
+/******** .coin_calculator ********/
+/************** blog **************/
+.blog {
+    padding: 30px 40px;
+}
+
+.blog .blog_headding h2 {
+    font-size: 25px;
+}
+
+.blog .blog_headding p {
+    padding-top: 10px;
+}
+
+.blog_div {
+    flex-wrap: wrap;
+}
+
+.blog_box {
+    width: 100%;
+    padding: 10px;
+}
+
+.blog_text_div {
+    bottom: 3%;
+    padding: 30px 20px 30px 33px;
+}
+
+.blog_text_div .blog_text h3 {
+    font-size: 22px;
+    line-height: 35px;
+    max-width: 500px;
+}
+
+.blog_text_div .blog_text .blog_text_sub {
+    font-size: 15px;
+}
+
+.blog_text_div p {
+    font-size: 15px;
+    max-width: 540px;
+    line-height: 25px;
+}
+
+.blog_boxs_div {
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+/************** blog **************/
+.sub_box {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+
+/************ footer ************/
+.footer_main_div {
+    padding: 30px 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer_main_div .footer_box {
+    width: 100%;
+}
+
+.footer_main_div .footer_box .about {
+    font-size: 12px;
+}
+
+.footer_box .contacts_number {
+    padding-top: 20px;
+}
+
+.footer_box .contacts_number ul li:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+.footer_box .contacts_number ul li img {
+    width: 12px;
+    height: 12px;
+}
+
+.footer_box .contacts_number ul li a {
+    padding-left: 10px;
+}
+
+.footer_main_div .footer_box .text  {
+    padding: 20px 0;
+}
+
+.footer_box .location_div {
+    padding: 20px 0;
+}
+
+.footer_box .news_text {
+    font-size: 12px;
+    line-height: 27px;
+    padding: 25px 0;
+}
+
+.footer_box .location_div .Address {
+    padding-left: 10px;
+}
+
+.footer_main_div .footer_box .recent_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_box h2 {
+    padding-top: 10px;
+}
+
+.footer_box .Recent_Posts_box {
+    padding-top: 10px;
+}
+
+.footer_box .news_text {
+    padding: 10px 0;
+}
+
+.send_div button {
+    width: 35px;
+    height: 45px;
+}
+
+.form_div {
+    padding-top: 0;
+}
+
+.input_div {
+    width: 80%;
+}
+
+.send_div {
+    right: 85px;
+}
+
+.sub_footer_div .sub_footer p {
+    font-size: 10px;
+}
+
+.sub_footer_div .sub_footer {
+    padding: 10px 0;
+}
+/************ footer ************/ 
+}
+
+@media(max-width:767px)     {   
+
+.banner_div {
+    padding: 0 20px;
+}
+
+.banner_div .banner_text_box h1 {
+    font-size: 26px;
+}
+
+/* .Distribution_div .Distribution_box_padding {
+    padding: 20px;
+}
+
+.time_div .time_box .time {
+    border-radius: 8px;
+}
+
+.time_div .time_box .time p {
+    padding: 20px 15px;
+}
+
+.clock_word {
+    padding-top: 10px;
+}
+
+.progressbar_div .progressbar_box {
+    margin: 10px 0;
+} */
+
+.Distribution_div {
+   display: none;
+}
+/************** time_until **************/
+.time_until {
+    padding: 30px 20px;
+}
+
+.time_until_text {
+    margin-bottom: 45px;
+}
+
+.time_until_text h2 {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.time_until_text p {
+    font-size: 8px;
+    padding-top: 5px;
+    line-height: 15px;
+    margin-left: 20px;
+}
+
+.time_until_box {
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.icon_div {
+    width: 65px;
+    height: 65px;
+}
+
+.icon_div img {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-line {
+    width: 0;
+}
+
+.icon_div_text {
+    width: 100%;
+    text-align: center;
+}
+
+.icon_div_text h3 {
+    font-size: 18px;
+}
+
+.time_until_div .time_until_box:nth-child(even) {
+    padding-left: unset;
+}
+.time_until_div .time_until_box:nth-child(even) .icon_div {
+    width: 65px;
+    height: 65px;
+}
+
+.time_until_div .time_until_box:nth-child(even) .icon_div img {
+    width: 25px;
+    height: 25px;
+}
+/************** time_until **************/
+/************* .live_market *************/
+.live_market {
+    padding: 30px 20px;
+}
+
+.live_market_box .live_market_text_div h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.live_market_box {
+    text-align: center;
+}
+
+.live_market_box .live_market_text_div p {
+    font-size: 12px;
+}
+
+.live_market_box .live_market_text_div p {
+    line-height: 25px;
+}
+.live_market_about_us {
+    padding: 20px 0;
+}
+
+.live_market_about_usbox {
+    padding-right: 0;
+}
+
+.live_market_about_us  ul li {
+    padding: 20px 5px;
+    justify-content: space-between;
+}
+
+.live_market_about_us  ul li .icon_box {
+    width: 20px;
+    height: 20px;
+}
+
+.live_market_about_us  ul li .icon_box img {
+    width: 10px;
+    height: 5px;
+}
+
+.live_market_about_us  ul li p {
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.live_market_box .button_divs button {
+    font-size: 12px;
+}
+
+.live_market_mobile .mobile_image {
+    width: 200px;
+}
+/************* .live_market *************/
+.mobile_text_box {
+    width: 220px;
+    right: 0%;
+}
+
+.mobile_text_box_padding {
+    padding: 10px;
+}
+
+.headding {
+    padding-bottom: 5px;
+}
+
+.mobile_text_icon {
+    width: 20px;
+    height: 10px;
+}
+
+.mobile_text_headding h2 {
+    font-size: 12px;
+    padding-right: 75px;
+}
+
+.mobile_text_headding p {
+    font-size: 10px;
+}
+
+.mobile_text_paragraph h3 {
+    font-size: 15px;
+}
+
+.mobile_text_paragraph  p {
+    font-size: 8px;
+}
+
+.mobile_text_boxs {
+    width: 210px;
+    right: 13%;
+    bottom: 0%;
+}
+
+.mobile_text_headding h2 {
+    padding-right: 65px;
+}
+
+
+/************ .mileston  ************/
+.mileston {
+    padding: 30px 10px;
+}
+
+.mileston .mileston_heading  {
+    margin-bottom: 50px;
+}
+
+.mileston .mileston_heading p {
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+.mileston_div .mileston_boxs:nth-child(even)  {
+    flex-direction: unset;
+}
+
+.mileston_div .mileston_boxs {
+    flex-wrap: wrap;
+}
+
+.mileston_div .mileston_boxs:nth-child(even)  {
+    flex-direction: unset;
+}
+
+.mileston_div .mileston_boxs .mileston_text_box {
+    width: 100%;
+    padding-left: 84px;
+    padding-right: 0;
+}
+
+.mileston_div .mileston_boxs:not(:last-child) .mileston_text_box {
+    padding-bottom: 45px;
+    order: 2;
+    padding-top: 30px;
+    padding-left: 60px;
+}
+
+.mileston_div .mileston_boxs .mileston_text_box::after {
+    left: 27px;
+}
+
+.mileston_div .date {
+    width: 100%;
+}
+
+.mileston_div .date_padding {
+    padding-left: 70px;
+}
+
+.mileston_div .date .image {
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.mileston_div .mileston_boxs:nth-child(even) .mileston_text_box::after {
+    left: 27px;
+}
+
+.mileston_div .mileston_boxs:nth-child(even) .date_padding {
+    text-align: left;
+    padding-left: 70px;
+}
+
+.mileston_div .mileston_boxs:nth-child(even) .date .image {
+    left: 5px;
+    right: unset;
+}
+
+.mileston_div .mileston_boxs:nth-child(even) .mileston_text_box {
+    padding-left: 65px;
+    padding-top: 30px;
+    order: 2;
+}
+
+.mileston_div .mileston_boxs .mileston_text_box h3 {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.mileston_div .mileston_boxs .mileston_text_box p {
+    font-size: 12px;
+}
+
+.mileston_div .mileston_boxs .mileston_text_box a span {
+    padding-left: 5px;
+}
+/********** .mileston_div  **********/
+/********** .market_update **********/
+.market_update {
+    padding: 20px 10px;
+}
+
+.market_update .market_heading {
+    margin-bottom: 50px;
+}
+
+.market_update .market_heading h2 {
+    padding-left: 15px;
+    font-size: 22px;
+}
+
+.market_update .market_heading p {
+    padding-top: 3px;
+    padding-left: 15px;
+    line-height:20px ;
+    font-size: 12px;
+}
+
+.market_update .nav {
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+
+.market_update .nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.market_update .nav ul li a {
+    font-size: 12px;
+}
+
+.market_update .nav button {
+    margin: auto;
+    padding: 6px 12px;
+}
+/********** .market_update **********/
+/********* .coin_calculator *********/
+.coin_calculator {
+    padding: 20px 10px;
+}
+
+.coin_calculator .coin_calculator_div {
+    flex-wrap: wrap;
+}
+
+.coin_calculator .coin_calculator_div .coin_text {
+    width: 100%;
+    text-align: center;
+}
+
+.coin_calculator .coin_calculator_div .coin_text .coin_calculation {
+    margin: auto;
+}
+
+.coin_calculator .coin_calculator_div .image_div {
+    width: 100%;
+    padding-top: 20px;
+}
+/********* .coin_calculator *********/
+/************** .blog **************/
+.blog {
+    padding: 20px 10px;
+}
+
+.blog .blog_headding {
+    margin-bottom: 50px;
+}
+
+.blog_box {
+    padding: 5px;
+}
+
+.blog_boxs_div .sub_box {
+    padding: 5px;
+}
+
+.blog .blog_headding h2 {
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+.blog .blog_headding p {
+    padding-top: 5px;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.blog_text_div {
+    padding: 5px;
+    bottom: 0;
+}
+
+.blog_text_div .blog_text h3 {
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 15px;
+}
+
+.blog_text_div .blog_text .blog_text_sub {
+    font-size: 10px;
+    padding-left: 15px;
+}
+
+.blog_text_div p {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.sub_text .text {
+    flex-direction: column;
+}
+
+.blog_text_div .blog_text {
+    flex-direction: column;
+}
+
+.sub_text .text h3 {
+    font-size: 12px;
+}
+
+.sub_text .text .text_sub {
+    font-size: 10px;
+}
+/************** .blog **************/
+/************** footer **************/
+footer {
+    margin-top: 20px;
+}
+
+.footer_main_div {
+    padding: 30px 10px;
+}
+
+.footer_main_div .footer_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_main_div .footer_box img {
+    width: 150px;
+    height: 40px;
+}
+
+.footer_main_div .footer_box .text p {
+    font-size: 12px;
+    line-height: 20px;
+    max-width:unset;
+    text-align: center;
+} 
+
+.footer_box .location_div {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_box .location_div .Address p {
+    font-size: 12px;
+    max-width: unset;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 10px;
+} 
+
+.footer_box .contacts_number ul li {
+   flex-direction: column;
+}
+
+.footer_box .contacts_number ul li a {
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.footer_box .Recent_Posts_box {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_box .Recent_Posts_box .post_text {
+    padding-left:unset;
+    padding-top: 10px;
+    text-align: center;
+} 
+
+.footer_box .Recent_Posts_box .post_text h3 {
+    font-size: 12px;
+} 
+
+.footer_box .Recent_Posts_box .image {
+    height: 55px;
+}
+
+.footer_box .Recent_Posts_box .post_text p {
+    font-size: 10px;
+    padding-top: 8px;
+}
+
+.footer_box .news_text {
+    text-align: center;
+    line-height: 20px;
+}
+
+.footer_main_div .footer_box .form_div {
+    width: 100%;
+}
+
+.footer_main_div .footer_box .form_div .input_div input {
+    font-size: 12px;
+}
+
+.footer_main_div .footer_box .form_div .input_div label {
+    color: #fff;
+    font-size: 10px;
+} 
+
+.footer_main_div .footer_box .form_div .input_div {
+    width: 90%;
+}
+
+.footer_main_div .footer_box .form_div .send_div {
+    right: 0;
+}
+
+}
