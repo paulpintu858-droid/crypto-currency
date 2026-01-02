@@ -931,6 +931,13 @@ header .main_header .menu .search_div {
     margin: auto;
     padding: 6px 12px;
 }
+.market_update .table_div {
+    overflow-x: scroll;
+    width: 100%;
+}
+.market_update .table_div table {
+    width: 660px;
+}
 /********** .market_update **********/
 /********* .coin_calculator *********/
 .coin_calculator {
