@@ -19,7 +19,6 @@
 header {
     padding: 10px;
 }   
-
    
 header .main_header .menu {
     position: absolute;
@@ -84,12 +83,22 @@ header .main_header .menu .search_div {
     right: 10px;
 }
 /************* header *************/
+/************* banner *************/
 .banner {
     margin-bottom: 30px;
+    height: 90vh;
+}
+
+.banner .background {
+    height: 90vh;
 }
 
 .banner_div {
-    padding: 0 40px;
+    padding: 95px 40px;
+    top: unset;
+    left: unset;
+    width: 100%;
+    position: relative;
 }
 
 .banner_box {
@@ -130,6 +139,7 @@ header .main_header .menu .search_div {
 .Distribution_div .Distribution_box_padding h3 {
     font-size: 14px;
 }
+/************* banner *************/
 /********** progressbar **********/
 .time_div {
     padding: 25px;
@@ -265,7 +275,7 @@ header .main_header .menu .search_div {
 }
 
 .live_market_box .button_divs button {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .live_market_about_us {
@@ -332,15 +342,15 @@ header .main_header .menu .search_div {
 }
 
 .mileston_div .mileston_boxs .mileston_text_box {
-    padding-right: 65px;
+    padding-right: 50px;
 }
 
 .mileston_div .mileston_boxs:not(:last-child) .mileston_text_box {
-    padding-bottom: 55px;
+    padding-bottom: 40px;
 }
 
 .mileston_div .mileston_boxs:nth-child(even) .mileston_text_box {
-    padding-left: 65px;
+    padding-left: 50px;
 }
 
 .mileston_div .mileston_boxs:nth-child(even) .date .image {
@@ -392,7 +402,7 @@ header .main_header .menu .search_div {
 
 .market_update .nav button {
     font-size: 12px;
-    padding: 14px 20px;
+    padding: 10px 20px;
 }
 
 .table_div table thead tr th {
@@ -505,7 +515,6 @@ header .main_header .menu .search_div {
     padding: 10px;
 }
 
-
 /************ footer ************/
 .footer_main_div {
     padding: 30px 40px;
@@ -601,17 +610,46 @@ header .main_header .menu .search_div {
 /************ footer ************/ 
 }
 
-@media(max-width:767px)     {   
-
+@media(max-width:767px)     { 
+/************** header **************/    
+.main_header .logo .logo_div .logo_image {
+    width: 130px;
+}  
+/************** header **************/
+/************** .banner **************/
+.banner {
+    height: 100vh;
+}
+.banner .background {
+    height: 100vh;
+}
 .banner_div {
-    padding: 0 20px;
+    padding: 85px 20px;
+}
+.button_div ul {
+    justify-content: center;
+}
+.banner_box {
+    gap: 20px;
+}
+.banner_div .banner_text_box h1 {
+    font-size: 22px !important;
+    padding-bottom: 10px;
 }
 
+.paragraph {
+    line-height: 25px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.banner_text_box {
+    text-align: center;
+}
 .banner_div .banner_text_box h1 {
     font-size: 26px;
 }
-
-/* .Distribution_div .Distribution_box_padding {
+/************** .banner **************/
+.Distribution_div .Distribution_box_padding {
     padding: 20px;
 }
 
@@ -629,11 +667,8 @@ header .main_header .menu .search_div {
 
 .progressbar_div .progressbar_box {
     margin: 10px 0;
-} */
-
-.Distribution_div {
-   display: none;
 }
+
 /************** time_until **************/
 .time_until {
     padding: 30px 20px;

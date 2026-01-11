@@ -8,78 +8,75 @@ $(".clo_button button").on("click", function(){
 
 
 
-/*Declare time*/
-const countToDate = new Date().setDate(new Date().getDate() + 9);
-
-/*Calculate time from current date compared to the Declared time*/
-setInterval(() => {
-  const currentDate = new Date();
-  const timeBetweenDates = Math.ceil((countToDate - currentDate) / 1000);
-  flipAllcard(timeBetweenDates);
-}, 250);
 
 
-/*Populate the cards with the data coming from the Declared Time*/
-function flipAllcard(time) {
-  const seconds = time % 60;
-  const minutes = Math.floor(time / 60) % 60;
-  const hours = Math.floor(time / 3600) % 24;
-  const days = Math.floor(time / 86400);
+ $(document).ready(function() {
 
-  flip(document.querySelector("[data-days]"), days, true);
-  flip(document.querySelector("[data-hours]"), hours);
-  flip(document.querySelector("[data-minutes]"), minutes);
-  flip(document.querySelector("[data-seconds]"), seconds);
-}
-
-
-/*Flip animation function for the cards*/
-function flip(flipcard, newNumber, flag) {
-    const cardTop = flipcard.querySelector("[data-card-top]");
-    const startNumber = cardTop ? parseInt(cardTop.textContent, 10) : 0;
-  
-    const cardBot = flipcard.querySelector("[data-card-bot]"),
-      topFlip = flipcard.querySelector("[data-flip-top]"),
-      botFlip = flipcard.querySelector("[data-flip-bot]"),
-      topFlipNum = flipcard.querySelector("[data-flip-top-num]"),
-      botFlipNum = flipcard.querySelector("[data-flip-bot-num]");
-
-  if (newNumber === startNumber) return;
-
-  const displayStartNum = String(startNumber).padStart(2, "0");
-
-  const displayNewNum = String(newNumber).padStart(2, "0");
-
-  if (flag) console.log("displayStartNum", displayStartNum, displayNewNum);
-
-  const anim = (el, event, callback) => {
-    const handler = () => {
-      el.removeEventListener(event, handler);
-      callback();
+  function Countdown($el) {
+    this.$el = $el;
+    this.values = {
+      hours: parseInt($el.find('.bloc-time.hours').attr('data-init-value')),
+      minutes: parseInt($el.find('.bloc-time.min').attr('data-init-value')),
+      seconds: parseInt($el.find('.bloc-time.sec').attr('data-init-value'))
     };
+    this.total_seconds = this.values.hours * 3600 + this.values.minutes * 60 + this.values.seconds;
+    this.$figures = {
+      hours: $el.find('.bloc-time.hours .figure'),
+      minutes: $el.find('.bloc-time.min .figure'),
+      seconds: $el.find('.bloc-time.sec .figure')
+    };
+    this.start();
+  }
 
-    el.addEventListener(event, handler);
-  };
+  Countdown.prototype.start = function() {
+    var that = this;
+    setInterval(function() {
+      if(that.total_seconds <= 0) return;
 
-  cardTop.textContent = displayStartNum;
-  cardBot.textContent = displayStartNum;
-  topFlipNum.textContent = displayStartNum;
-  botFlipNum.textContent = displayNewNum;
+      that.total_seconds--;
+      that.values.hours = Math.floor(that.total_seconds / 3600);
+      that.values.minutes = Math.floor((that.total_seconds % 3600) / 60);
+      that.values.seconds = that.total_seconds % 60;
 
-  topFlip.classList.add("flip-card-top");
-  botFlip.classList.add("flip-card-bottom");
+      that.updateFigure(that.values.hours, that.$figures.hours);
+      that.updateFigure(that.values.minutes, that.$figures.minutes);
+      that.updateFigure(that.values.seconds, that.$figures.seconds);
 
-  anim(topFlip, "animationstart", () => {
-    cardTop.textContent = displayNewNum;
-  });
+    }, 1000);
+  }
 
-  anim(topFlip, "animationend", () => {
-    topFlipNum.innerText = displayNewNum;
-    topFlip.classList.remove("flip-card-top");
-  });
+  Countdown.prototype.updateFigure = function(value, $el) {
+    var valStr = String(value).padStart(2, '0');
+    var digits = valStr.split('');
 
-  anim(botFlip, "animationend", () => {
-    cardBot.textContent = displayNewNum;
-    botFlip.classList.remove("flip-card-bottom");
-  });
-}
+    $el.each(function(i){
+      var $top = $(this).find('.top span');
+      var $bottom = $(this).find('.bottom span');
+      var $topBack = $(this).find('.top-back span');
+      var $bottomBack = $(this).find('.bottom-back span');
+
+      if($top.text() !== digits[i]){
+        $topBack.text(digits[i]);
+        $bottomBack.text(digits[i]);
+
+        $(this).find('.top').addClass('flip-top');
+        $(this).find('.bottom-back').addClass('flip-bottom');
+
+        setTimeout(function(){
+          $top.text(digits[i]);
+          $bottom.text(digits[i]);
+          $(this).find('.top').removeClass('flip-top');
+          $(this).find('.bottom-back').removeClass('flip-bottom');
+        }.bind(this), 600);
+      }
+    });
+  }
+
+  new Countdown($('.countdown'));
+});
+
+
+
+
+
+
