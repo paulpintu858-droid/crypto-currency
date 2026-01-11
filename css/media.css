@@ -178,6 +178,7 @@ header .main_header .menu .search_div {
 /********** time_until **********/
 .time_until {
     padding: 30px 40px;
+    overflow: hidden;
 }
 
 .time_until_text h2 {
@@ -239,6 +240,7 @@ header .main_header .menu .search_div {
 /********* .live_market *********/
 .live_market {
     padding: 30px 40px;
+    overflow: hidden;
 }
 
 .live_market .live_market_div {
